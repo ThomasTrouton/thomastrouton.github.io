@@ -9,10 +9,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <style> section {padding-top:40px; margin-top:-40px; }</style>
+  <style> section {padding-top:40px; margin-top:-40px;}</style>
 
 </head>
-<body style="height:100%; font-family: 'Passion One', cursive;">
+<body style="height:100%; font-family: 'Passion One', cursive; background-color:rgb(229,229,229)">
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -27,7 +27,6 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
     <ul class="nav navbar-nav">
-
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
         <ul class="dropdown-menu">
 	  <li><a href='#section1'>Spider Graphs</a></li>
@@ -36,10 +35,10 @@
           <li><a href="#">Sudoku</a></li>
         </ul>
       </li>
-      <li><a id="but1" href="#front" data-toggle="collapse" data-target=".navbar-collapse.show">Page 2</a></li>
-    </ul
-    <!-- <ul class="nav navbar-nav navbar-right">
-      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+      <!--<li><a id="but1" href="#front" data-toggle="collapse" data-target=".navbar-collapse.show">Page 2</a></li>-->
+</ul>    
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="http://www.linkedin.com/in/thomastrouton"><span> <img src="in.png" height="20px" width="20px"> </span> </a></li>
       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
     </ul>
   </div>
@@ -52,7 +51,7 @@ $('but1').click(function(){
 </script>
 
 <section id ="front">
-	<div style="height: 100vh; background-image:url('PANO.jpg'); background-repeat: no-repeat; background-size:cover; position:relative">
+	<div style="height:100vh ; background-image:url('PANO.jpg'); background-repeat: no-repeat; background-size:cover; position:relative">
 		
 		<div style="background-color:rgba(255,255,255, 0.5); position: absolute; top: 30%; transform: translate(0%, -30%); width:100%">
  			<h1 style= "color:black;  font-size: 16px;  font-size: 12vw; text-align: center; vertical-align: middle; line-height: 80%; margin:0;padding:0;" >
@@ -64,15 +63,15 @@ $('but1').click(function(){
 			Python  · Android  ·  Data Visualisation  · Optimisation ·  Machine Learning · Computer Vision · Arduino </h3>
 		</div> 
 
-		<div style="position:absolute; bottom:0px; height: 15%; width:100%; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,1));"></div>	
+		<div style="position:absolute; bottom:0px; height: 15%; width:100%; background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(229,229,229,1));"></div>	
 	</div>
 </section>
 
-<section id ="section1">
-<div class="container" style="font-family: 'Roboto', sans-serif; height: 100vh; margin-top:2%">
+<section >
+<div class="container" style="font-family: 'Roboto', sans-serif; height: 100vh; padding-top:60px">
 	<div class="row">
 		<div class="col-sm-6">
-			<h1>Spider Graphs</h1>
+			<h1 id ="section1">Spider Graphs</h1>
 			<div style="font-size: 20px">
 	      			<p>Making a bar chart transform smoothly into a spider graph seemed like an interesting visualisation to create.</p>
 	      			<p>My maths study did a lot of mappings of the upper half plane etc and I thought this could provide some useful methods.</p>
@@ -82,7 +81,7 @@ $('but1').click(function(){
 		</div>
 	    	<div class="col-sm-6">
 			<video width="100%" playsinline autoplay muted loop>		
-			  	<source src="spider.mp4" type="video/mp4">
+			  	<source src= "spider.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
 		</div>
