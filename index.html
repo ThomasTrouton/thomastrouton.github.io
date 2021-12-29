@@ -12,12 +12,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
   <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-carousel.js"></script>
+  <script type="text/javascript" src="google-form.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <style> section {padding-top:40px; margin-top:-40px;}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+<style> section {padding-top:40px; margin-top:-40px;}
                     .nav {
                     background-color:#f2eae7;
                     }
+                    .form-group input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: thin;
+    border-bottom-color: #254F5E;
+
+}
+
 </style>
 
 </head>
@@ -131,9 +145,35 @@
       <div class="tab-pane fade" id="pills-story" role="tabpanel" aria-labelledby="pills-story-tab"> story story story</div>
       <div class="tab-pane fade" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab"> 
 
-        <img class="img-fluid" src="contact.jpg" alt="First slide">
+          <img src="contact.jpg" style="width:100%;">
+          <div class="text-block" style="position: absolute; top: 40%; right: 30%; color: #f2eae7; padding-left: 20px; padding-right: 20px; font-family: 'Cormorant Garamond';">
+            <h4>Nature</h4>
+            <p>What a beautiful sunrise</p>
+          </div>
 
+          <div class="jumbotron jumbotron-fluid " style="background-color:#f2eae7">
+            <div class="container text-center">
+              <p style="font-family: 'Cormorant Garamond'; font-weight: 300;  color:#254F5E; font-size: 48px; letter-spacing: 2px">SAY HELLO</p>
+              <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px">I'D LOVE TO HEAR FROM YOU</p>
+            </div>
+    
+          <form class="form " action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsSkvZ3rQgnWa-h0O0_B-MpBmSkK375p5r5pk_7VubeSYlog/formResponse?embedded=true" onsubmit="return window.submitGoogleForm(this);" style="font-family: 'Josefin Sans'; color:#254F5E">
+            
+            <div class="form-group row justify-content-center ">
+              <input name="entry.2005620554" type="text" placeholder="NAME"  style="background-color: #f2eae7;"/>
+<p>&nbsp;</p>
+              <input name="entry.1045781291" type="email" placeholder="EMAIL" required  style="background-color: #f2eae7;"/>
+            </div>
+            
+            <div class="form-group row justify-content-center">
+              <input name="entry.839337160" type="text" placeholder="MESSAGE" style="background-color: #f2eae7;"/>
+            </div>
+          <div class="form-group row justify-content-center">            
+            <input type="SUBMIT" value="Send"  style="background-color: #f2eae7; border:2px; color: #254F5E"/>
+          </div>
+      </form>  
       </div>
+    </div>
 
     </div>
 
@@ -148,3 +188,17 @@
 <!-- darkgreen #254F5E -->
 <!-- cream #f2eae7 -->
 <!-- colors -->
+
+
+<!-- clear form boxes on submit
+  say hello in caps and not bold
+  see also floaral designer in caps
+  letter spacing boosted
+-->
+
+<!-- <fonts -->
+  <!-- Cormorant Garamond upper -->
+  <!-- Josefin Sans upper -->
+  <!-- libre baskerville italic lower-->
+  <!-- end of fonts -->
+  
