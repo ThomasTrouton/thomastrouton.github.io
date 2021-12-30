@@ -19,6 +19,7 @@
     } catch(e) {}
 
     form.parentNode.className += ' submitted';
+    form.reset()
 
     return false;
   }
