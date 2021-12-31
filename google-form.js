@@ -20,6 +20,7 @@
 
     form.parentNode.className += ' submitted';
     form.reset()
+    document.getElementById("sendButton").value = "Sent"
 
     return false;
   }
