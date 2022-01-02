@@ -43,59 +43,67 @@
  
     <!-- <ul class="nav justify-content-center nav-fill d-lg-flex align-items-center" style="z-index: 200; padding-left:5.5%; padding-right:5.5%; padding-top: 1%; padding-bottom: 1%; font-family: 'Cormorant Garamond', serif; font-size:  11px; letter-spacing: 1px"> -->
 
-    <ul class="nav justify-content-center nav-fill d-lg-flex align-items-center" id="pills-tab" role="tablist" style="z-index: 200; padding-left:5.5%; padding-right:5.5%; padding-top: 1%; padding-bottom: 1%; font-family: 'Cormorant Garamond', serif; font-size:  11px; letter-spacing: 1px">
+    <ul class="nav justify-content-center d-lg-flex align-items-center nav-justified" id="pills-tab" role="tablist" style="z-index: 200; padding-left:5.5%; padding-right:5.5%; padding-top: 1%; padding-bottom: 1%; font-family: 'Cormorant Garamond', serif; font-size:  11px; letter-spacing: 1px">
   
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
           <span style= "color:#254F5E">
             HOME
           </span>
       </a>
-      </li>
+      </li> -->
+
+      <li style="width: 15%;">
+        <a class="nav-item nav-link" id="pills-story-tab" data-toggle="pill" href="#pills-story" role="tab" aria-controls="pills-story" aria-selected="false">
+          <span style= "color:#254F5E">
+            OUR STORY
+          </span>
+      </a>
+      </li>  
         
-      <li>
-        <a class="nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="false">
+      <li style="width: 15%;">
+        <a class="nav-item nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="false">
           <span style= "color:#254F5E">
             PORTFOLIO
           </span>
       </a>
       </li>  
 
-      <li>
+      <!-- <li>
         <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
           <span style= "color:#254F5E">
             WEDDINGS & EVENTS
           </span>
       </a>
-      </li>  
+      </li>   -->
 
-      <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false" style="width:33vw">
+      <li style="width: 30%;">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
           <span> 
-            <img src="AS Landscape Logo RGB.png" width="85%" class="img-fluid">
+            <img src="AS Landscape Logo RGB.png" class="img-fluid">
         </span>
       </a>
       </li>
   
 
-      <li>
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">
+      <li style="width: 15%;">
+        <a class=" nav-item nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">
           <span style= "color:#254F5E">
             EVENT REQUESTS
           </span>
       </a>
       </li>  
 
-      <li>
+      <!-- <li>
         <a class="nav-link" id="pills-story-tab" data-toggle="pill" href="#pills-story" role="tab" aria-controls="pills-story" aria-selected="false">
           <span style= "color:#254F5E">
             OUR STORY
           </span>
       </a>
-      </li>  
+      </li>   -->
 
-      <li>
-        <a class="nav-link" id="pills-hello-tab" data-toggle="pill" href="#pills-hello" role="tab" aria-controls="pills-hello" aria-selected="false">
+      <li style="width: 15%;">
+        <a class="nav-item nav-link" id="pills-hello-tab" data-toggle="pill" href="#pills-hello" role="tab" aria-controls="pills-hello" aria-selected="false">
           <span style= "color:#254F5E">
             SAY HELLO
           </span>
@@ -134,7 +142,9 @@
       <div class="jumbotron jumbotron-fluid " style="background-color:#f2eae7">
         <div class="container text-center" style="font-family: 'Cormorant Garamond'; color:#254F5E">
           <p style="font-family: 'Cormorant Garamond'; font-weight: 300;  color:#254F5E; font-size: 48px; letter-spacing: 2px">FLORAL DESIGNER</p>
-          <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px">A DESIGNER OF FLORALS</p>
+          <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px; text-transform:uppercase">
+            Libby McPherson is an Australian based floral designer specializing in weddings & events with a …. feel.
+          </p>
         </div>
       </div>
 
@@ -239,7 +249,7 @@
   </div>
 
 <script>
-  var posts = ["CPnVkSItA06", "CPnVsOpN_xS", "CPnWDeUNWkl", "CVIXOe4Nfbo", "CXvOZHwtnIs"]
+  var posts = ["COw6SLnNNxC", "CPnVkSItA06", "CPnVsOpN_xS", "CPnWDeUNWkl", "CVIXOe4Nfbo", "CXvOZHwtnIs"]
   var row = document.getElementById("instagramRow")
   posts.forEach(x => {
     var column = document.createElement("div")
