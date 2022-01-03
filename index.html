@@ -32,6 +32,39 @@
 
 }
 
+.text {
+  font-family: 'Cormorant Garamond'; 
+  font-weight: 300; 
+  letter-spacing: 2px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: 0; */
+  /* right: 0; */
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 0.6;
+}
+
 </style>
 
 </head>
@@ -120,6 +153,14 @@
       </a>
       </li>  
 
+      <li style="display: none;">
+        <a class="nav-item nav-link" id="portfolio-yellow-tab" data-toggle="pill" href="#pills-portfolio-yellow" role="tab" aria-controls="pills-portfolio-yellow" aria-selected="false">
+          <span style= "color:#254F5E">
+            yellow
+          </span>
+      </a>
+      </li>  
+
 
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -183,6 +224,9 @@
           <div class="row mt-4">
             <div class="col">
               <img src="portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.jpeg" class="w-100" loading = "lazy">
+              <div class="overlay" onClick="window.scrollTo(0,0); new bootstrap.Tab(document.querySelector('#portfolio-yellow-tab')).show()" style="cursor: pointer;">
+                <div class="text" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 48px; letter-spacing: 2px">Yellow & Flowers</div>
+              </div>            
             </div>
             <div class="col">
               <img src="portfolio/vertical/8472DA9B-F804-4FF0-B481-61D4262767E8.jpeg" class="w-100"  loading = "lazy">
@@ -211,6 +255,36 @@
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> weddings & events info blah blah blah</div>
       <div class="tab-pane fade" id="pills-requests" role="tabpanel" aria-labelledby="pills-requests-tab"> event requests</div>
       <div class="tab-pane fade" id="pills-story" role="tabpanel" aria-labelledby="pills-story-tab"> story story story</div>
+      <div class="tab-pane fade" id="pills-portfolio-yellow" role="tabpanel" aria-labelledby="yelow-tab">
+        <div class = "container text-center">
+          <img src = "portfolio/detailled/yellow/0.jpeg" class="img-fluid mx-auto" styles = "width:80%">
+          <div class="row mt-5 ">
+            <div class="col">
+              <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px; text-transform:uppercase">INSERT EVENT NAME</p>
+                </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px; text-transform:uppercase">Location: Australia </p>
+            </div>
+            <div class="col">
+              <p style="font-family: 'Josefin Sans'; font-weight: 300;  color:#254F5E; font-size: 14px; letter-spacing: 1px; text-transform:uppercase">Photographer: xxxx </p>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5 justify-content-around">
+            <div class="col-4">
+              <img src="portfolio/detailled/yellow/1.jpeg" class="img-fluid w-80" loading = "lazy">
+            </div>
+            <div class="col-4">
+              <img src="portfolio/detailled/yellow/2.jpeg" class="img-fluid w-80" loading = "lazy">
+            </div>
+            <div class="col-4">
+              <img src="portfolio/detailled/yellow/3.jpeg" class="img-fluid w-80" loading = "lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div class="tab-pane fade" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab"> 
 
           <img src="contact.jpg" style="width:100%;">
