@@ -1,0 +1,54 @@
+section {padding-top:40px; margin-top:-40px;}
+                    .nav {
+                    background-color:#f2eae7;
+                    }
+                    .form-group input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: thin;
+    border-bottom-color: #254F5E;
+
+}
+
+.text {
+  font-family: 'Cormorant Garamond'; 
+  font-weight: 300; 
+  letter-spacing: 2px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: 0; */
+  /* right: 0; */
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: black;
+}
+
+.img-hover:hover .overlay {
+  opacity: 0.6;
+}
+
+.para-1 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    color:#254F5E;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
