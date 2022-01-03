@@ -1,5 +1,6 @@
 !function(exports) {
   exports.submitGoogleForm = submitGoogleForm;
+  exports.populateInstagram = populateInstagram;
 
   function submitGoogleForm(form) {
     try {
@@ -24,4 +25,21 @@
 
     return false;
   }
+
+  function populateInstagram(posts) {
+    var row = document.getElementById("instagramRow")
+    posts.forEach(x => {
+      var column = document.createElement("div")
+      column.className = "col-2"
+      var link = document.createElement("a")
+      link.href = "https://www.instagram.com/p/" + x;
+      var image = document.createElement("img");
+      image.src = "instagram/" + x;
+      image.className = "img-fluid mb-3";
+      link.appendChild(image);
+      column.appendChild(link);
+      row.appendChild(column);
+    })
+  }
+
 }(typeof module === 'undefined' ? window : module.exports);
