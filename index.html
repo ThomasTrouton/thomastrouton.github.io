@@ -29,59 +29,60 @@
           </a>
       </ul>
       
-
-    <ul class="nav justify-content-center d-lg-flex align-items-center nav-justified" id="pills-tab" role="tablist" style="z-index: 200; padding-left:5.5%; padding-right:5.5%; padding-top: 1%; padding-bottom: 1%; font-family: 'Cormorant Garamond', serif; font-size:  11px; letter-spacing: 1px">
-  
-
-      <li style="width: 15%;">
-        <a class="nav-item nav-link" id="pills-story-tab" data-toggle="pill" href="#pills-story" role="tab" aria-controls="pills-story" aria-selected="false">
-          <span style= "color:#254F5E">
-            OUR STORY
-          </span>
+  <ul class="navbar navbar-expand-lg navbar-light nav justify-content-center d-lg-flex align-items-center nav-justified" id="pills-tab" role="tablist" style="z-index: 200; padding-left:5.5%; padding-right:5.5%; padding-top: 1%; padding-bottom: 1%; font-family: 'Cormorant Garamond', serif; font-size:  11px; letter-spacing: 1px">
+    <li>
+      <a class="nav-item nav-link navbar-brand d-lg-none" id="pills-contact-tab2" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false" style="width: 96pt; color: #254F5E;" onclick="window.scrollTo(0,0); new bootstrap.Tab(document.querySelector('#pills-contact-tab')).show()">
+          <img src="AS Landscape Logo RGB.png" class="img-fluid">
       </a>
-      </li>  
-        
-      <li style="width: 15%;">
-        <a class="nav-item nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="false">
-          <span style= "color:#254F5E">
-            PORTFOLIO
-          </span>
-      </a>
-      </li>  
+    </li>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
+        aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="myNavbarToggler7">
+        <ul class="nav navbar-nav justify-content-center align-items-center">
 
+          <li style="width: 15%;">
+            <a class="nav-item nav-link" id="pills-story-tab" data-toggle="pill" href="#pills-story" role="ta" aria-controls="pills-story" aria-selected="false" style="color: #254F5E;">
+                OUR STORY
+            </a>
+          </li>  
+            
+          <li style="width: 15%;">
+            <a class="nav-item nav-link" id="pills-portfolio-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="false" style="color: #254F5E;">
+                PORTFOLIO
+            </a>
+          </li>  
+    
+          <li style="width: 30%;">
+            <a class="nav-link d-none d-lg-block" id="pills-contact-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false" style="color: #254F5E;">
+                <img src="AS Landscape Logo RGB.png" class="img-fluid">
+            </a>
+          </li>
+    
+          <li style="width: 15%;">
+            <a class=" nav-item nav-link" id="pills-requests-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false" style="color: #254F5E;">
+                EVENT REQUESTS
+            </a>
+          </li>  
+    
+          <li style="width: 15%;">
+            <a class="nav-item nav-link" id="pills-hello-tab" data-toggle="pill" href="#pills-hello" role="tab" aria-controls="pills-hello" aria-selected="false" style="color: #254F5E;">
+              SAY HELLO
+            </a>
+          </li>  
+    
+          <li style="display: none;"><a class="nav-item nav-link" id="portfolio-yellow-tab" data-toggle="pill" href="#pills-portfolio-yellow" role="tab" aria-controls="pills-portfolio-yellow" aria-selected="false"></a></li>  
+          <li style="display: none;"><a class="nav-item nav-link" id="portfolio-baby-shower-tab" data-toggle="pill" href="#pills-portfolio-baby-shower" role="tab" aria-controls="pills-portfolio-baby-shower" aria-selected="false"></a></li>
+    
+        </ul>
+    </div>
+  </ul>
 
-      <li style="width: 30%;">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
-          <span> 
-            <img src="AS Landscape Logo RGB.png" class="img-fluid">
-        </span>
-      </a>
-      </li>
-  
-
-      <li style="width: 15%;">
-        <a class=" nav-item nav-link" id="pills-requests-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">
-          <span style= "color:#254F5E">
-            EVENT REQUESTS
-          </span>
-      </a>
-      </li>  
-
-      <li style="width: 15%;">
-        <a class="nav-item nav-link" id="pills-hello-tab" data-toggle="pill" href="#pills-hello" role="tab" aria-controls="pills-hello" aria-selected="false">
-          <span style= "color:#254F5E">
-            SAY HELLO
-          </span>
-      </a>
-      </li>  
-
-      <li style="display: none;"><a class="nav-item nav-link" id="portfolio-yellow-tab" data-toggle="pill" href="#pills-portfolio-yellow" role="tab" aria-controls="pills-portfolio-yellow" aria-selected="false"></a></li>  
-      <li style="display: none;"><a class="nav-item nav-link" id="portfolio-baby-shower-tab" data-toggle="pill" href="#pills-portfolio-baby-shower" role="tab" aria-controls="pills-portfolio-baby-shower" aria-selected="false"></a></li>
-
-    </ul>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div id="carouselControls" class="carousel slide" data-ride="carousel", style="height:100%">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel" style="height:100%">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="table.jpeg">
@@ -294,6 +295,7 @@
       </div>
       </div>
     </div>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
