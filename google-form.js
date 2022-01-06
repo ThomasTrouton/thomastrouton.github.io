@@ -22,6 +22,7 @@
     form.parentNode.className += ' submitted';
     form.reset()
     document.getElementById("sendButton").value = "Sent"
+    document.getElementById("sendButton2").value = "Sent"
 
     return false;
   }
@@ -30,7 +31,7 @@
     var row = document.getElementById("instagramRow")
     posts.forEach(x => {
       var column = document.createElement("div")
-      column.className = "col-lg-2 col-6"
+      column.className = "col-lg-2s col-6"
       var link = document.createElement("a")
       link.href = "https://www.instagram.com/p/" + x;
       var image = document.createElement("img");

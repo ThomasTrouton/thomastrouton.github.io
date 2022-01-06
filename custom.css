@@ -52,3 +52,20 @@ section {padding-top:40px; margin-top:-40px;}
     letter-spacing: 1px;
     text-transform: uppercase
 }
+
+.datepicker {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  color:#254F5E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase
+}
+
+.datepicker-switch {
+  font-weight: 300;
+}  
+
+.dow {
+  font-weight: 300;
+}  
