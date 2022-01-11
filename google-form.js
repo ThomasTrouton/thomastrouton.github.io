@@ -35,7 +35,7 @@
       var link = document.createElement("a")
       link.href = "https://www.instagram.com/p/" + x;
       var image = document.createElement("img");
-      image.src = "instagram/" + x;
+      image.src = "images/original/instagram/" + x + ".jpg";
       image.className = "img-fluid mb-3";
       link.appendChild(image);
       column.appendChild(link);
