@@ -35,7 +35,7 @@
       var link = document.createElement("a")
       link.href = "https://www.instagram.com/p/" + x;
       var image = document.createElement("img");
-      image.src = "images/original/instagram/" + x + ".jpg";
+      image.src = "images/xxs/instagram/" + x + ".webp";
       image.width = "100"
       image.height = "100"
       image.style = "width:100%"

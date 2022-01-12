@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 
 def get_srcset(path):
-    images = glob.glob("./" + path.replace("original","*").replace(".jpg",".*").replace(".jpeg",".*"))
+    images = glob.glob("./" + path.replace("original","*").replace(".jpg",".webp*").replace(".jpeg",".webp"))
     results =[]
     for img in images:
         width = Image.open(img).width
