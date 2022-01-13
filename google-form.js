@@ -31,7 +31,7 @@
     var row = document.getElementById("instagramRow")
     posts.forEach(x => {
       var column = document.createElement("div")
-      column.className = "col-lg-2 col-sm-6"
+      column.className = "col-6 col-lg-2"
       var link = document.createElement("a")
       link.href = "https://www.instagram.com/p/" + x;
       var image = document.createElement("img");
