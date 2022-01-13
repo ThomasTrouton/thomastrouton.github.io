@@ -73,9 +73,13 @@ section {padding-top:40px; margin-top:-40px;}
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus {
+.navbar-toggler-icon-custom:focus {
     outline: none;
     box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(37,79,94,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
 .tab-heading {
