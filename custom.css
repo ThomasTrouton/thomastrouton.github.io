@@ -92,6 +92,22 @@ section {padding-top:40px; margin-top:-40px;}
   text-align: center
 }
 
+.text-overlay {
+  font-family: 'Cormorant Garamond';
+   font-weight: 300;
+   font-size: 36px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.descr-1{
+font-family: 'Cormorant Garamond';
+font-weight: 300;
+font-size: 28pt;
+letter-spacing: 2px;
+text-transform:uppercase
+}
+
 @media screen and (min-width: 1000px) {
   .custom-overlay {
     position: absolute;
@@ -114,4 +130,13 @@ section {padding-top:40px; margin-top:-40px;}
     color:#254F5E;
     font-size: 24px;
   }
+
+  .text-overlay {
+     font-size: 20px;
+  }
+
+  .descr-1{
+    font-size: 16pt;
+    letter-spacing: normal
+  } 
 }
