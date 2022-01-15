@@ -87,13 +87,13 @@
     <div class="carousel slide" data-ride="carousel" id="carouselControls" style="height:100%">
      <div class="carousel-inner">
       <div class="carousel-item active">
-       <img class="d-block w-100" height="3" sizes = "75vw" src="images/original/mainpage/yellow.jpg" srcset="./images/xxs/mainpage/yellow.webp 300w, ./images/xs/mainpage/yellow.webp 500w, ./images/s/mainpage/yellow.webp 800w, ./images/m/mainpage/yellow.webp 1200w, ./images/l/mainpage/yellow.webp 1600w" style="height:auto" width="4">
+       <img class="d-block w-100" height="3" sizes="75vw" src="images/original/mainpage/yellow.jpg" srcset="./images/xxs/mainpage/yellow.webp 300w, ./images/xs/mainpage/yellow.webp 500w, ./images/s/mainpage/yellow.webp 800w, ./images/m/mainpage/yellow.webp 1200w, ./images/l/mainpage/yellow.webp 1600w" style="height:auto" width="4">
       </div>
       <div class="carousel-item">
-       <img class="d-block w-100" height="3" sizes = "100vw" loading="lazy" src="images/original/mainpage/table.jpeg" srcset="./images/xxs/mainpage/table.webp 300w, ./images/xs/mainpage/table.webp 500w" style="height:auto" width="4">
+       <img class="d-block w-100" height="3" loading="lazy" sizes="100vw" src="images/original/mainpage/table.jpeg" srcset="./images/xxs/mainpage/table.webp 300w, ./images/xs/mainpage/table.webp 500w" style="height:auto" width="4">
       </div>
       <div class="carousel-item">
-       <img class="d-block w-100" height="3" sizes = "100vw" loading="lazy" src="images/original/mainpage/roses.jpg" srcset="./images/xxs/mainpage/roses.webp 300w, ./images/xs/mainpage/roses.webp 500w, ./images/s/mainpage/roses.webp 800w, ./images/m/mainpage/roses.webp 1200w, ./images/l/mainpage/roses.webp 1600w, ./images/xl/mainpage/roses.webp 2000w" style="height:auto" width="4">
+       <img class="d-block w-100" height="3" loading="lazy" sizes="100vw" src="images/original/mainpage/roses.jpg" srcset="./images/xxs/mainpage/roses.webp 300w, ./images/xs/mainpage/roses.webp 500w, ./images/s/mainpage/roses.webp 800w, ./images/m/mainpage/roses.webp 1200w, ./images/l/mainpage/roses.webp 1600w, ./images/xl/mainpage/roses.webp 2000w" style="height:auto" width="4">
       </div>
      </div>
      <a class="carousel-control-prev" data-slide="prev" href="#carouselControls" role="button" style="width: 3%; padding: 2%; opacity: 1">
@@ -170,7 +170,7 @@
        <div class="img-hover">
         <img class="w-100" loading="lazy" src="images/original/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.jpeg" srcset="./images/xxs/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.webp 225w, ./images/xs/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.webp 375w, ./images/s/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.webp 600w, ./images/m/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.webp 899w, ./images/l/portfolio/vertical/D1E4CE1A-F678-4A0A-8BB2-EEF81806C057.webp 1199w">
         <div class="overlay" onclick="window.scrollTo(0,0); new bootstrap.Tab(document.querySelector('#portfolio-yellow-tab')).show()" style="cursor: pointer;">
-            <div class="text text-overlay">
+         <div class="text text-overlay">
           Summer Long Lunch
          </div>
         </div>
@@ -227,15 +227,15 @@
      <div class="container">
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSekeTGDn3HlDHcXdmqvXAFoEcTU0uXchGpq6GxKo9f5n86FxA/formResponse?embedded=true" class="form" onsubmit="return window.submitGoogleForm(this);" style="font-family: 'Josefin Sans'; color:#254F5E">
        <div class="form-group row justify-content-center">
-        <input name="entry.186585142" placeholder="NAME" style="background-color: #f2eae7;width: 200pt" type="text">
-        <p>
-         &nbsp;
-        </p>
-        <input name="entry.233152642" placeholder="EMAIL" required="" style="background-color: #f2eae7;width: 200pt" type="email">
-        <p>
-         &nbsp;
-        </p>
-        <input name="entry.1284976770" placeholder="PHONE NUMBER" style="background-color: #f2eae7;width: 200pt" type="tel">
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center mb-3">
+         <input name="entry.186585142" placeholder="NAME" style="background-color: #f2eae7;width: 100%" type="text">
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center mb-3">
+         <input name="entry.233152642" placeholder="EMAIL" required="" style="background-color: #f2eae7;width: 100%" type="email">
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center mb-3">
+         <input name="entry.1284976770" placeholder="PHONE NUMBER" style="background-color: #f2eae7;width: 100%" type="tel">
+        </div>
        </div>
        <div class="form-group row justify-content-center">
         <div class="col-xs justify-content-center" id="sandbox-container" style="z-index:300">
@@ -250,20 +250,30 @@
          <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.css" rel="stylesheet">
         </div>
        </div>
-       <div class="form-group row justify-content-center">
-        <input name="entry.194650238" placeholder="EVENT LOCATION" style="background-color: #f2eae7;width: 600pt" type="text">
+       <div class="row justify-content-center">
+        <div class="form-group col-lg-8 col-sm-12 justify-content-center">
+         <input name="entry.194650238" placeholder="EVENT LOCATION" style="background-color: #f2eae7;width: 100%" type="text">
+        </div>
        </div>
-       <div class="form-group row justify-content-center">
-        <textarea class="form-control" name="entry.137004864" placeholder="EVENT DETAILS" required="" rows="4" style="background-color: #f2eae7; width: 600pt"></textarea>
+       <div class="row justify-content-center">
+        <div class="form-group col-lg-8 col-sm-12 justify-content-center">
+         <textarea class="form-control" name="entry.137004864" placeholder="EVENT DETAILS" required="" rows="4" style="background-color: #f2eae7; width: 100%"></textarea>
+        </div>
        </div>
-       <div class="form-group row justify-content-center">
-        <input name="entry.138366603" placeholder="PHOTOGRAPHER / PLANNER / STYLIST DETAILS" style="background-color: #f2eae7;width: 600pt;" type="text">
+       <div class="row justify-content-center">
+        <div class="form-group col-lg-8 col-sm-12 justify-content-center">
+         <input name="entry.138366603" placeholder="PHOTOGRAPHER / PLANNER / STYLIST DETAILS" style="background-color: #f2eae7;width: 100%;" type="text">
+        </div>
        </div>
-       <div class="form-group row justify-content-center">
-        <input name="entry.440717690" placeholder="BUDGET" style="background-color: #f2eae7;width: 600pt;" type="text">
+       <div class="row justify-content-center">
+        <div class="form-group col-lg-8 col-sm-12 justify-content-center">
+         <input name="entry.440717690" placeholder="BUDGET" style="background-color: #f2eae7;width: 100%;" type="text">
+        </div>
        </div>
-       <div class="form-group row justify-content-center">
-        <input name="entry.1014733185" placeholder="HOW DID YOU HEAR ABOUT US" style="background-color: #f2eae7;width: 600pt" type="text">
+       <div class="row justify-content-center">
+        <div class="form-group col-lg-8 col-sm-12 justify-content-center">
+         <input name="entry.1014733185" placeholder="HOW DID YOU HEAR ABOUT US" style="background-color: #f2eae7;width: 100%" type="text">
+        </div>
        </div>
        <div class="form-group row justify-content-center">
         <input id="sendButton2" style="background-color: #f2eae7; border:2px; padding-top: 20px; color: #254F5E" type="SUBMIT" value="Send">
@@ -328,7 +338,7 @@
        <p class="para-1 mb-0">
         Location
        </p>
-       <p class = "descr-1">
+       <p class="descr-1">
         Water St Kitchen
        </p>
       </div>
@@ -336,7 +346,7 @@
        <p class="para-1 mb-0">
         Photographer
        </p>
-       <p class = "descr-1">
+       <p class="descr-1">
         Paul Beutel
        </p>
       </div>
@@ -346,29 +356,29 @@
        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/1.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/1.webp 200w, ./images/xs/portfolio/detailled/yellow/1.webp 333w, ./images/s/portfolio/detailled/yellow/1.webp 533w, ./images/m/portfolio/detailled/yellow/1.webp 800w, ./images/l/portfolio/detailled/yellow/1.webp 1066w">
       </div>
       <div class="col-12 col-lg-4 mt-3 mb-3">
-        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/2.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/2.webp 200w, ./images/xs/portfolio/detailled/yellow/2.webp 333w, ./images/s/portfolio/detailled/yellow/2.webp 533w, ./images/m/portfolio/detailled/yellow/2.webp 800w, ./images/l/portfolio/detailled/yellow/2.webp 1066w">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/2.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/2.webp 200w, ./images/xs/portfolio/detailled/yellow/2.webp 333w, ./images/s/portfolio/detailled/yellow/2.webp 533w, ./images/m/portfolio/detailled/yellow/2.webp 800w, ./images/l/portfolio/detailled/yellow/2.webp 1066w">
       </div>
       <div class="col-12 col-lg-4 mt-3 mb-3">
-        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/3.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/3.webp 200w, ./images/xs/portfolio/detailled/yellow/3.webp 333w, ./images/s/portfolio/detailled/yellow/3.webp 533w, ./images/m/portfolio/detailled/yellow/3.webp 800w, ./images/l/portfolio/detailled/yellow/3.webp 1066w">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/3.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/3.webp 200w, ./images/xs/portfolio/detailled/yellow/3.webp 333w, ./images/s/portfolio/detailled/yellow/3.webp 533w, ./images/m/portfolio/detailled/yellow/3.webp 800w, ./images/l/portfolio/detailled/yellow/3.webp 1066w">
       </div>
      </div>
      <div class="row justify-content-around">
-        <div class="col-12 col-lg-6 mt-3 mb-3">
-            <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/4.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/4.webp 300w, ./images/xs/portfolio/detailled/yellow/4.webp 500w, ./images/s/portfolio/detailled/yellow/4.webp 800w, ./images/m/portfolio/detailled/yellow/4.webp 1200w, ./images/l/portfolio/detailled/yellow/4.webp 1600w">
+      <div class="col-12 col-lg-6 mt-3 mb-3">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/4.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/4.webp 300w, ./images/xs/portfolio/detailled/yellow/4.webp 500w, ./images/s/portfolio/detailled/yellow/4.webp 800w, ./images/m/portfolio/detailled/yellow/4.webp 1200w, ./images/l/portfolio/detailled/yellow/4.webp 1600w">
       </div>
       <div class="col-12 col-lg-6 mt-3 mb-3">
-        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/5.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/5.webp 300w, ./images/xs/portfolio/detailled/yellow/5.webp 500w, ./images/s/portfolio/detailled/yellow/5.webp 800w, ./images/m/portfolio/detailled/yellow/5.webp 1200w, ./images/l/portfolio/detailled/yellow/5.webp 1600w">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/5.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/5.webp 300w, ./images/xs/portfolio/detailled/yellow/5.webp 500w, ./images/s/portfolio/detailled/yellow/5.webp 800w, ./images/m/portfolio/detailled/yellow/5.webp 1200w, ./images/l/portfolio/detailled/yellow/5.webp 1600w">
       </div>
      </div>
      <div class="row justify-content-around">
-        <div class="col-12 col-lg-4  mt-3 mb-3">
-            <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/6.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/6.webp 200w, ./images/xs/portfolio/detailled/yellow/6.webp 333w, ./images/s/portfolio/detailled/yellow/6.webp 533w, ./images/m/portfolio/detailled/yellow/6.webp 800w, ./images/l/portfolio/detailled/yellow/6.webp 1066w">
+      <div class="col-12 col-lg-4 mt-3 mb-3">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/6.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/6.webp 200w, ./images/xs/portfolio/detailled/yellow/6.webp 333w, ./images/s/portfolio/detailled/yellow/6.webp 533w, ./images/m/portfolio/detailled/yellow/6.webp 800w, ./images/l/portfolio/detailled/yellow/6.webp 1066w">
       </div>
       <div class="col-12 col-lg-4 mt-3 mb-3">
-        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/7.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/7.webp 200w, ./images/xs/portfolio/detailled/yellow/7.webp 333w, ./images/s/portfolio/detailled/yellow/7.webp 533w, ./images/m/portfolio/detailled/yellow/7.webp 800w, ./images/l/portfolio/detailled/yellow/7.webp 1066w">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/7.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/7.webp 200w, ./images/xs/portfolio/detailled/yellow/7.webp 333w, ./images/s/portfolio/detailled/yellow/7.webp 533w, ./images/m/portfolio/detailled/yellow/7.webp 800w, ./images/l/portfolio/detailled/yellow/7.webp 1066w">
       </div>
       <div class="col-12 col-lg-4 mt-3 mb-3">
-        <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/8.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/8.webp 200w, ./images/xs/portfolio/detailled/yellow/8.webp 333w, ./images/s/portfolio/detailled/yellow/8.webp 533w, ./images/m/portfolio/detailled/yellow/8.webp 800w, ./images/l/portfolio/detailled/yellow/8.webp 1066w">
+       <img class="img-fluid w-80" loading="lazy" src="images/original/portfolio/detailled/yellow/8.jpeg" srcset="./images/xxs/portfolio/detailled/yellow/8.webp 200w, ./images/xs/portfolio/detailled/yellow/8.webp 333w, ./images/s/portfolio/detailled/yellow/8.webp 533w, ./images/m/portfolio/detailled/yellow/8.webp 800w, ./images/l/portfolio/detailled/yellow/8.webp 1066w">
       </div>
      </div>
     </div>
@@ -537,14 +547,17 @@
      <div class="container">
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsSkvZ3rQgnWa-h0O0_B-MpBmSkK375p5r5pk_7VubeSYlog/formResponse?embedded=true" class="form" onsubmit="return window.submitGoogleForm(this);" style="font-family: 'Josefin Sans'; color:#254F5E">
        <div class="form-group row justify-content-center">
-        <input name="entry.2005620554" placeholder="NAME" style="background-color: #f2eae7;width: 200pt" type="text">
-        <p>
-         &nbsp;
-        </p>
-        <input name="entry.1045781291" placeholder="EMAIL" required="" style="background-color: #f2eae7;width: 200pt" type="email">
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+         <input name="entry.2005620554" placeholder="NAME" style="background-color: #f2eae7;width: 100%" type="text">
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+         <input name="entry.1045781291" placeholder="EMAIL" required="" style="background-color: #f2eae7;width: 100%" type="email">
+        </div>
        </div>
        <div class="form-group row justify-content-center">
-        <textarea class="form-control" name="entry.839337160" placeholder="MESSAGE" required="" rows="4" style="background-color: #f2eae7; width: 400pt"></textarea>
+        <div class="col-lg-8 col-sm-12 d-flex justify-content-center">
+         <textarea class="form-control" name="entry.839337160" placeholder="MESSAGE" required="" rows="4" style="background-color: #f2eae7; width: 100%"></textarea>
+        </div>
        </div>
        <div class="form-group row justify-content-center">
         <input id="sendButton" style="background-color: #f2eae7; border:2px; color: #254F5E" type="SUBMIT" value="Send">
@@ -577,7 +590,7 @@
    <div class="row mt-3 pb-0 justify-content-center fluid" id="instagramRow" style="background-color: #94a395">
    </div>
    <div class="row mt-0 pt-0 pb-3 justify-content-center fluid" style="background-color: #94a395">
-    <img src="images/original/mainpage/monogram_white.webp" srcset="./images/original/mainpage/monogram_white.webp 580w" style="height: 36pt;">
+    <img src="images/original/mainpage/monogram_white.webp" srcset="./images/original/mainpage/monogram_white.webp 80w" style="height: 36pt;">
    </div>
   </div>
   <script>
