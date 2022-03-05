@@ -112,10 +112,12 @@
     <div class="jumbotron jumbotron-fluid" style="margin-bottom:0; background-color:#f2eae7">
      <div class="container text-center" style="font-family: 'Cormorant Garamond'; color:#254F5E">
       <p class="tab-heading">
-       FLORAL DESIGNER
+       FLORAL DESIGN STUDIO
       </p>
       <p style="font-family: 'Libre Baskerville';  color:#254F5E; font-size: 14px;">
-       Libby McPherson is an Australian based floral designer specializing in weddings &amp; events with a &hellip;. feel.
+        Annabella Studios is a unique floral design studio based in Queensland, Australia.<br>
+        Creating abundant, seasonal, colourful and rambling florals for weddings & events across Queensland…<br>
+        Australia and beyond. We are now taking bookings for 2022 & 2023.
       </p>
      </div>
     </div>
@@ -145,14 +147,32 @@
        <img class="img-fluid w-80" loading="lazy" src="images/original/mainpage/786C7902-844E-4B55-BD88-1EC0219C1162_1_201_a.jpeg" srcset="./images/xxs/mainpage/786C7902-844E-4B55-BD88-1EC0219C1162_1_201_a.webp 300w, ./images/xs/mainpage/786C7902-844E-4B55-BD88-1EC0219C1162_1_201_a.webp 499w, ./images/s/mainpage/786C7902-844E-4B55-BD88-1EC0219C1162_1_201_a.webp 799w">
       </div>
       <div class="col-lg-6 col-sm-12">
-       <div class="text-block p-3" style=" height:100%; background-color:#94a395; padding-left: 20px; padding-right: 20px; font-family: 'Cormorant Garamond'; color:#f2eae7; text-align:center">
+
+        <div class="container" style=" height:100%; background-color:#94a395; padding-left: 20px; padding-right: 20px; font-family: 'Cormorant Garamond'; color:#f2eae7; text-align:center">
+          <div class="row align-items-center justify-content-center" style="height: 100%;">
+          <div class="row pt-5 mb-5 justify-content-around" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 32px; letter-spacing: 2px" >MEET LIBBY</div>
+          <div class="row mt-0 mb-5 justify-content-around" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 14px; letter-spacing: 2px; padding-left: 20%; padding-right: 20%;" >Hello, my name is Libby Annabella. I am the creator & designer behind Annabella Studios… I look forward to sitting and sipping a coffee or cocktail with you while we work out how to bring your floral fancies to life.</div>
+          <div class="row mt-0 mb-5 justify-content-around">
+            <button class="btn btn-default para-1" onclick="window.scrollTo(0,0); new bootstrap.Tab(document.querySelector('#pills-story-tab')).show()" style="border-radius: 0px; color:#f2eae7; border-color:#f2eae7; background: none;">
+             Read More
+            </button>
+           </div>
+        </div>   
+      </div>  
+
+       <!-- <div class="text-block p-3" style=" height:100%; background-color:#94a395; padding-left: 20px; padding-right: 20px; font-family: 'Cormorant Garamond'; color:#f2eae7; text-align:center">
         <p style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 32px; letter-spacing: 2px">
          MEET LIBBY
         </p>
-        <p style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 14px; letter-spacing: 2px">
-         I arrange flowers and enjoy doing things like blah blah blah
+        <p style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 14px; letter-spacing: 2px; margin: 52px;">
+         Hello, my name is Libby Annabella. I am the creator & designer behind Annabella Studios… I look forward to sitting and sipping a coffee or cocktail with you while we work out how to bring your floral fancies to life.
         </p>
-       </div>
+        <div class="col text-center">
+          <button class="btn btn-default para-1" onclick="window.scrollTo(0,0); new bootstrap.Tab(document.querySelector('#pills-story-tab')).show()" style="border-radius: 0px; color:#f2eae7; border-color:#f2eae7; background: none;">
+           Read More
+          </button>
+         </div>
+       </div> -->
       </div>
      </div>
     </div>
@@ -596,6 +616,22 @@
   </div>
   <script>
    populateInstagram(["COw6SLnNNxC", "CPnVkSItA06", "CPnVsOpN_xS", "CPnWDeUNWkl", "CVIXOe4Nfbo", "CXvOZHwtnIs"])
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      if (location.hash.substr(0,2) == "#!") {
+          $("a[href='#" + location.hash.substr(2) + "']").tab("show");
+      }
+  
+      $("a[data-toggle='tab']").on("shown", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0,1) == "#") {
+              location.replace("#!" + hash.substr(1));
+          }
+      });
+  
+  });
   </script>
  </body>
 </html>
